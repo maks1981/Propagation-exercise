@@ -44,7 +44,8 @@ var parent = document.querySelector('.parent');
 
 function showChild(event){
     event.stopPropagation()
-    console.log('I am green');
+    event.target.style.background = 'yellow';
+    console.log('I am not green , I am yellow');
 }
 function showParent(event){
     console.log('i am a red')
